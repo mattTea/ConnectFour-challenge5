@@ -117,4 +117,6 @@ getGridStatus( [".......",
 
 2. `getGridStatus` returns "Red plays next" for empty grid
 
-3. 
+3. `getGridStatus` returns "Draw" for full grid
+
+4. 

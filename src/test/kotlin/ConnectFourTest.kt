@@ -6,13 +6,25 @@ class ConnectFourTest {
 
     @Test
     fun `getGridStatus() returns "Red plays next" for empty grid`() {
-        val grid : Array<String> = arrayOf( ".......",
-                                            ".......",
-                                            ".......",
-                                            ".......",
-                                            ".......",
-                                            ".......")
+        val emptyGrid : Array<String> = arrayOf(".......",
+                                                ".......",
+                                                ".......",
+                                                ".......",
+                                                ".......",
+                                                ".......")
 
-        assertEquals("Red plays next", connectFour.getGridStatus(grid))
+        assertEquals("Red plays next", connectFour.getGridStatus(emptyGrid, connectFour::checkForBlanks))
+    }
+
+    @Test
+    fun `getGridStatus() returns "Draw" for grid with no empty spaces`() {
+        val fullGrid : Array<String> = arrayOf( "ryrryrY",
+                                                "yrryyyr",
+                                                "yryyryr",
+                                                "rryyrry",
+                                                "yyyrrry",
+                                                "rrryyyr")
+
+        assertEquals("Draw", connectFour.getGridStatus(fullGrid, connectFour::checkForBlanks))
     }
 }
