@@ -115,4 +115,6 @@ getGridStatus( [".......",
 
 1. `getGridStatus` returns a string
 
-2. 
+2. `getGridStatus` returns "Red plays next" for empty grid
+
+3. 

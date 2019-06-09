@@ -5,7 +5,14 @@ class ConnectFourTest {
     private val connectFour = ConnectFour()
 
     @Test
-    fun `getGridStatus() returns a string`() {
-        assertEquals("Red plays next", connectFour.getGridStatus())
+    fun `getGridStatus() returns "Red plays next" for empty grid`() {
+        val grid : Array<String> = arrayOf( ".......",
+                                            ".......",
+                                            ".......",
+                                            ".......",
+                                            ".......",
+                                            ".......")
+
+        assertEquals("Red plays next", connectFour.getGridStatus(grid))
     }
 }

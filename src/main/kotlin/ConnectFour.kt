@@ -1,6 +1,6 @@
 class ConnectFour {
 
-    fun getGridStatus(): String {
+    fun getGridStatus(grid: Array<String>): String {
         return "Red plays next"
     }
 }
