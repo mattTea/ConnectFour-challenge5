@@ -21,14 +21,10 @@ class ConnectFour {
     }
 
     fun getGridStatus(grid: Array<String>): String {
-        return if (checkForBlanks(grid)) {
-            return if (checkForR(grid)) {
-                "Yellow plays next"
-            } else {
-                "Red plays next"
-            }
-        } else {
-            "Draw"
+        return when {
+            checkForBlanks(grid) && checkForR(grid) -> "Yellow plays next"
+            checkForBlanks(grid) && !checkForR(grid) -> "Red plays next"
+            else -> "Draw"
         }
     }
 }

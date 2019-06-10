@@ -48,28 +48,28 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="371">
-                <caret line="121" column="72" selection-start-line="121" selection-start-column="72" selection-end-line="121" selection-end-column="72" />
+              <first_editor relative-caret-position="372">
+                <caret line="123" column="59" selection-start-line="123" selection-start-column="59" selection-end-line="123" selection-end-column="59" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/ConnectFour.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="374">
+              <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/ConnectFourTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            <state relative-caret-position="374">
+              <caret line="45" column="7" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="7" />
               <folding>
                 <element signature="e#0#75#0" expanded="true" />
               </folding>
@@ -93,9 +93,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/kotlin/ConnectFourTest.kt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/kotlin/ConnectFour.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/ConnectFourTest.kt" />
       </list>
     </option>
   </component>
@@ -206,17 +206,11 @@
       <updated>1560079462003</updated>
       <workItem from="1560079463323" duration="10492000" />
       <workItem from="1560151875907" duration="117000" />
-      <workItem from="1560189852471" duration="3148000" />
+      <workItem from="1560189852471" duration="4685000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConnectFourTest - 2019.06.09 at 16h 00m 40s.xml">
-      <configuration name="ConnectFourTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConnectFourTest - 2019.06.09 at 16h 02m 58s.xml">
-      <configuration name="ConnectFourTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ConnectFourTest - 2019.06.09 at 21h 09m 40s.xml">
       <configuration name="ConnectFourTest" configurationId="JUnit" />
     </history-entry>
@@ -241,9 +235,15 @@
     <history-entry file="ConnectFourTest - 2019.06.10 at 19h 38m 06s.xml">
       <configuration name="ConnectFourTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ConnectFourTest - 2019.06.10 at 20h 33m 53s.xml">
+      <configuration name="ConnectFourTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConnectFourTest - 2019.06.10 at 20h 35m 24s.xml">
+      <configuration name="ConnectFourTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13757000" />
+    <option name="totallyTimeSpent" value="15294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -289,27 +289,27 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="371">
-            <caret line="121" column="72" selection-start-line="121" selection-start-column="72" selection-end-line="121" selection-end-column="72" />
+          <first_editor relative-caret-position="372">
+            <caret line="123" column="59" selection-start-line="123" selection-start-column="59" selection-end-line="123" selection-end-column="59" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/ConnectFourTest.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ConnectFour.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ConnectFour.kt">
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/ConnectFourTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="45" column="7" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
