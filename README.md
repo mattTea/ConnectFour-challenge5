@@ -119,4 +119,4 @@ getGridStatus( [".......",
 
 3. `getGridStatus` returns "Draw" for full grid
 
-4. 
+4. `getGridStatus` returns "Yellow plays next" for grid with "R" present

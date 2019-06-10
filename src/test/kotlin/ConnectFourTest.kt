@@ -28,4 +28,15 @@ class ConnectFourTest {
         assertEquals("Draw", connectFour.getGridStatus(fullGrid))
     }
 
+    @Test
+    fun `getGridStatus() returns "Yellow plays next" when "R" is present in grid`() {
+        val yellowNextGrid : Array<String> = arrayOf(   "ryrryR.",
+                                                        "yrryyyr",
+                                                        "yryyryr",
+                                                        "rryyrry",
+                                                        "yyyrrry",
+                                                        "rrryyyr")
+
+        assertEquals("Yellow plays next", connectFour.getGridStatus(yellowNextGrid))
+    }
 }
