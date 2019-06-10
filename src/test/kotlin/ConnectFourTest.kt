@@ -13,7 +13,7 @@ class ConnectFourTest {
                                                 ".......",
                                                 ".......")
 
-        assertEquals("Red plays next", connectFour.getGridStatus(emptyGrid, connectFour::checkForBlanks))
+        assertEquals("Red plays next", connectFour.getGridStatus(emptyGrid))
     }
 
     @Test
@@ -25,6 +25,7 @@ class ConnectFourTest {
                                                 "yyyrrry",
                                                 "rrryyyr")
 
-        assertEquals("Draw", connectFour.getGridStatus(fullGrid, connectFour::checkForBlanks))
+        assertEquals("Draw", connectFour.getGridStatus(fullGrid))
     }
+
 }

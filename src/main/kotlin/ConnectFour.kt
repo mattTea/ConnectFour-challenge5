@@ -4,7 +4,7 @@ class ConnectFour {
         return row.contains(".")
     }
 
-    fun getGridStatus(grid: Array<String>, checkForBlanks: (String) -> Boolean): String {
+    fun getGridStatus(grid: Array<String>): String {
         for (row in grid) {
             if (checkForBlanks(row)) {
                 return "Red plays next"
