@@ -20,8 +20,19 @@ class ConnectFour {
         return bigRPresent
     }
 
+    private fun checkForRedWin(grid: Array<String>): Boolean {
+        var redWin = false
+        for (row in grid) {
+            if (row.toLowerCase().contains("rrrr")) {
+                redWin = true
+            }
+        }
+        return redWin
+    }
+
     fun getGridStatus(grid: Array<String>): String {
         return when {
+            checkForRedWin(grid) -> "Red wins"
             checkForBlanks(grid) && checkForR(grid) -> "Yellow plays next"
             checkForBlanks(grid) && !checkForR(grid) -> "Red plays next"
             else -> "Draw"

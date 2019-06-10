@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a55a83d-2cf3-422f-b68f-c39a3e6b5319" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ConnectFour.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ConnectFour.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/ConnectFourTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ConnectFourTest.kt" afterDir="false" />
     </list>
@@ -56,20 +55,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/ConnectFour.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+            <state relative-caret-position="299">
+              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/ConnectFourTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="45" column="7" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="7" />
+            <state relative-caret-position="359">
+              <caret line="51" column="72" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
               <folding>
                 <element signature="e#0#75#0" expanded="true" />
               </folding>
@@ -94,8 +93,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/ConnectFour.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/ConnectFourTest.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/ConnectFour.kt" />
       </list>
     </option>
   </component>
@@ -206,20 +205,11 @@
       <updated>1560079462003</updated>
       <workItem from="1560079463323" duration="10492000" />
       <workItem from="1560151875907" duration="117000" />
-      <workItem from="1560189852471" duration="4685000" />
+      <workItem from="1560189852471" duration="6655000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConnectFourTest - 2019.06.09 at 21h 09m 40s.xml">
-      <configuration name="ConnectFourTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConnectFourTest - 2019.06.09 at 21h 10m 13s.xml">
-      <configuration name="ConnectFourTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConnectFourTest - 2019.06.10 at 19h 04m 39s.xml">
-      <configuration name="ConnectFourTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ConnectFourTest - 2019.06.10 at 19h 17m 06s.xml">
       <configuration name="ConnectFourTest" configurationId="JUnit" />
     </history-entry>
@@ -241,9 +231,18 @@
     <history-entry file="ConnectFourTest - 2019.06.10 at 20h 35m 24s.xml">
       <configuration name="ConnectFourTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ConnectFourTest - 2019.06.10 at 21h 01m 57s.xml">
+      <configuration name="ConnectFourTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConnectFourTest - 2019.06.10 at 21h 02m 30s.xml">
+      <configuration name="ConnectFourTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConnectFourTest - 2019.06.10 at 21h 09m 44s.xml">
+      <configuration name="ConnectFourTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15294000" />
+    <option name="totallyTimeSpent" value="17264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -296,20 +295,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ConnectFour.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/ConnectFourTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="45" column="7" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="7" />
+        <state relative-caret-position="359">
+          <caret line="51" column="72" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ConnectFour.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
         </state>
       </provider>
     </entry>

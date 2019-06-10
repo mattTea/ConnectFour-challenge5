@@ -5,7 +5,7 @@ class ConnectFourTest {
     private val connectFour = ConnectFour()
 
     @Test
-    fun `getGridStatus() returns "Red plays next" for empty grid`() {
+    fun `returns "Red plays next" for empty grid`() {
         val emptyGrid : Array<String> = arrayOf(".......",
                                                 ".......",
                                                 ".......",
@@ -17,7 +17,7 @@ class ConnectFourTest {
     }
 
     @Test
-    fun `getGridStatus() returns "Draw" for grid with no empty spaces`() {
+    fun `returns "Draw" for grid with no empty spaces`() {
         val fullGrid : Array<String> = arrayOf( "ryrryrY",
                                                 "yrryyyr",
                                                 "yryyryr",
@@ -29,7 +29,7 @@ class ConnectFourTest {
     }
 
     @Test
-    fun `getGridStatus() returns "Yellow plays next" when "R" is present in grid`() {
+    fun `returns "Yellow plays next" when "R" is present in grid`() {
         val yellowNextGrid : Array<String> = arrayOf(   "ryrryR.",
                                                         "yrryyyr",
                                                         "yryyryr",
@@ -40,8 +40,15 @@ class ConnectFourTest {
         assertEquals("Yellow plays next", connectFour.getGridStatus(yellowNextGrid))
     }
 
-//    @Test
-//    fun ``() {
-//
-//    }
+    @Test
+    fun `returns "Red wins" for 4 horizontal connected reds`() {
+        val redWinsGrid : Array<String> = arrayOf(  ".......",
+                                                    ".......",
+                                                    ".......",
+                                                    ".......",
+                                                    "..yyy..",
+                                                    "..rrrR.")
+
+        assertEquals("Red wins", connectFour.getGridStatus(redWinsGrid))
+    }
 }
