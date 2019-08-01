@@ -122,3 +122,7 @@ getGridStatus( [".......",
 4. `getGridStatus` returns "Yellow plays next" for grid with "R" present
 
 5. `getGridStatus` returns "Red wins" for 4 horizontal reds
+
+6. `getGridStatus` returns "Red wins" for 4 vertical reds
+    - Check for 4 reds in same index position of 4 rows in grid
+    - Then check whether they are in consecutive rows
