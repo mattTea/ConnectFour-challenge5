@@ -41,6 +41,18 @@ class ConnectFourTest {
     }
 
     @Test
+    fun `returns "Red plays next" when "Y" is present`() {
+        val redNextGrid : Array<String> = arrayOf(  ".......",
+                                                    ".......",
+                                                    ".......",
+                                                    ".......",
+                                                    ".......",
+                                                    "..rY...")
+
+        assertEquals("Red plays next", connectFour.getGridStatus(redNextGrid))
+    }
+
+    @Test
     fun `returns "Red wins" for 4 horizontal connected reds`() {
         val redWinsGrid : Array<String> = arrayOf(  ".......",
                                                     ".......",
@@ -53,6 +65,18 @@ class ConnectFourTest {
     }
 
     @Test
+    fun `returns "Yellow wins" for 4 horizontal connected yellows`() {
+        val yellowWinsGrid : Array<String> = arrayOf(   ".......",
+                                                        ".......",
+                                                        ".......",
+                                                        "..rr...",
+                                                        "..yyyY.",
+                                                        "..rrry.")
+
+        assertEquals("Yellow wins", connectFour.getGridStatus(yellowWinsGrid))
+    }
+
+    @Test
     fun `returns "Red wins" for 4 vertical connected reds`() {
         val redWinsVert : Array<String> = arrayOf(  ".......",
                                                     ".......",
@@ -62,5 +86,17 @@ class ConnectFourTest {
                                                     "..ry...")
 
         assertEquals("Red wins", connectFour.getGridStatus(redWinsVert))
+    }
+
+    @Test
+    fun `returns "Yellow wins" for 4 vertical connected yellows`() {
+        val yellowWinsVert : Array<String> = arrayOf(   ".......",
+                                                        ".......",
+                                                        "...Y...",
+                                                        "..ry...",
+                                                        "..ry...",
+                                                        ".rry...")
+
+        assertEquals("Yellow wins", connectFour.getGridStatus(yellowWinsVert))
     }
 }

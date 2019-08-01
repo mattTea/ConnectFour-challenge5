@@ -30,9 +30,24 @@ class ConnectFour {
         return redWin
     }
 
+    private fun checkForYellowWin(grid: Array<String>): Boolean {
+        var yellowWin = false
+        for (row in grid) {
+            if (row.toLowerCase().contains("yyyy")) {
+                yellowWin = true
+            }
+        }
+        return yellowWin
+    }
+
     private fun checkForRedColumnWin(grid: Array<String>): Boolean {
         val transposedGrid = transpose(grid)
         return checkForRedWin(transposedGrid)
+    }
+
+    private fun checkForYellowColumnWin(grid: Array<String>): Boolean {
+        val transposedGrid = transpose(grid)
+        return checkForYellowWin(transposedGrid)
     }
 
     private fun transpose(grid: Array<String>): Array<String> {
@@ -51,8 +66,8 @@ class ConnectFour {
 
     fun getGridStatus(grid: Array<String>): String {
         return when {
-            checkForRedWin(grid) -> "Red wins"
-            checkForRedColumnWin(grid) -> "Red wins"
+            checkForRedWin(grid) || checkForRedColumnWin(grid) -> "Red wins"
+            checkForYellowWin(grid) || checkForYellowColumnWin(grid) -> "Yellow wins"
             checkForBlanks(grid) && checkForR(grid) -> "Yellow plays next"
             checkForBlanks(grid) && !checkForR(grid) -> "Red plays next"
             else -> "Draw"
