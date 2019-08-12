@@ -99,4 +99,16 @@ class ConnectFourTest {
 
         assertEquals("Yellow wins", connectFour.getGridStatus(yellowWinsVert))
     }
+
+    @Test
+    fun `returns "Yellow wins" for 4 diagonal connected yellows`() {
+        val yellowWinsDiagonal : Array<String> = arrayOf(   ".......",
+                                                            ".......",
+                                                            "...y...",
+                                                            "...ry..",
+                                                            "...ryy.",
+                                                            "...rrrY")
+
+        assertEquals("Yellow wins", connectFour.getGridStatus(yellowWinsDiagonal))
+    }
 }

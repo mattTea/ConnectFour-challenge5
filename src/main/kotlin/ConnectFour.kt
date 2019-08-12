@@ -64,10 +64,26 @@ class ConnectFour {
         return transposedListOfStrings.toTypedArray()
     }
 
+    private fun checkForYellowDiagonalWin(grid: Array<String>): Boolean {
+        var yellowWin = false
+        val gridAsSingleString = grid.joinToString("").toLowerCase()
+
+        for ((index, char) in gridAsSingleString.withIndex()) {
+            if (char == 'y' && index < 18) {
+                println(gridAsSingleString)
+                if (gridAsSingleString.toList()[index + 8] == 'y' && gridAsSingleString.toList()[index + 16] == 'y' && gridAsSingleString.toList()[index + 24] == 'y') {
+                    yellowWin = true
+                }
+            }
+        }
+
+        return yellowWin
+    }
+
     fun getGridStatus(grid: Array<String>): String {
         return when {
             checkForRedWin(grid) || checkForRedColumnWin(grid) -> "Red wins"
-            checkForYellowWin(grid) || checkForYellowColumnWin(grid) -> "Yellow wins"
+            checkForYellowWin(grid) || checkForYellowColumnWin(grid) || checkForYellowDiagonalWin(grid) -> "Yellow wins"
             checkForBlanks(grid) && checkForR(grid) -> "Yellow plays next"
             checkForBlanks(grid) && !checkForR(grid) -> "Red plays next"
             else -> "Draw"
