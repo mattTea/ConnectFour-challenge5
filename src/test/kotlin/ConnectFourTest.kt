@@ -123,4 +123,28 @@ class ConnectFourTest {
 
         assertEquals("Yellow wins", connectFour.getGridStatus(yellowWinsDiagonal))
     }
+
+//    @Test
+//    fun `returns "Red wins" for 4 diagonal (down right) connected reds`() {
+//        val redWinsDiagonal : Array<String> = arrayOf(  ".......",
+//                                                        ".......",
+//                                                        "...R...",
+//                                                        "...yr..",
+//                                                        "...yyr.",
+//                                                        "..rryyr")
+//
+//        assertEquals("Red wins", connectFour.getGridStatus(redWinsDiagonal))
+//    }
+//
+//    @Test
+//    fun `returns "Red wins" for 4 diagonal (down left) connected reds`() {
+//        val redWinsDiagonal : Array<String> = arrayOf(  ".......",
+//                                                        ".......",
+//                                                        "...R...",
+//                                                        "..ry...",
+//                                                        ".ryy...",
+//                                                        "ryyrr..")
+//
+//        assertEquals("Red wins", connectFour.getGridStatus(redWinsDiagonal))
+//    }
 }
