@@ -18,24 +18,24 @@ class ConnectFourTest {
 
     @Test
     fun `returns "Draw" for grid with no empty spaces`() {
-        val fullGrid : Array<String> = arrayOf( "ryrryrY",
-                                                "yrryyyr",
-                                                "yryyryr",
+        val fullGrid : Array<String> = arrayOf( "yyyryyY",
+                                                "rrryrrr",
+                                                "yyrrryr",
                                                 "rryyrry",
-                                                "yyyrrry",
-                                                "rrryyyr")
+                                                "yyrryyr",
+                                                "yyrryry")
 
         assertEquals("Draw", connectFour.getGridStatus(fullGrid))
     }
 
     @Test
     fun `returns "Yellow plays next" when "R" is present in grid`() {
-        val yellowNextGrid : Array<String> = arrayOf(   "ryrryR.",
-                                                        "yrryyyr",
-                                                        "yryyryr",
+        val yellowNextGrid : Array<String> = arrayOf(   "yyyRyy.",
+                                                        "rrryrrr",
+                                                        "yyrrryr",
                                                         "rryyrry",
-                                                        "yyyrrry",
-                                                        "rrryyyr")
+                                                        "yyrryyr",
+                                                        "yyrryry")
 
         assertEquals("Yellow plays next", connectFour.getGridStatus(yellowNextGrid))
     }
@@ -101,13 +101,25 @@ class ConnectFourTest {
     }
 
     @Test
-    fun `returns "Yellow wins" for 4 diagonal connected yellows`() {
+    fun `returns "Yellow wins" for 4 diagonal (down right) connected yellows`() {
         val yellowWinsDiagonal : Array<String> = arrayOf(   ".......",
                                                             ".......",
                                                             "...y...",
                                                             "...ry..",
                                                             "...ryy.",
                                                             "...rrrY")
+
+        assertEquals("Yellow wins", connectFour.getGridStatus(yellowWinsDiagonal))
+    }
+
+    @Test
+    fun `returns "Yellow wins" for 4 diagonal (down left) connected yellows`() {
+        val yellowWinsDiagonal : Array<String> = arrayOf(   ".......",
+                                                            ".......",
+                                                            "...y...",
+                                                            "..yr...",
+                                                            ".yyr...",
+                                                            "Yrrr...")
 
         assertEquals("Yellow wins", connectFour.getGridStatus(yellowWinsDiagonal))
     }

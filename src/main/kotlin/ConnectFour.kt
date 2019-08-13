@@ -69,14 +69,19 @@ class ConnectFour {
         val gridAsSingleString = grid.joinToString("").toLowerCase()
 
         for ((index, char) in gridAsSingleString.withIndex()) {
-            if (char == 'y' && index < 18) {
-                println(gridAsSingleString)
-                if (gridAsSingleString.toList()[index + 8] == 'y' && gridAsSingleString.toList()[index + 16] == 'y' && gridAsSingleString.toList()[index + 24] == 'y') {
-                    yellowWin = true
-                }
-            }
+            if (char != 'y' || index >= 18) continue
+            if (gridAsSingleString.toList()[index + 8] == 'y'
+                && gridAsSingleString.toList()[index + 16] == 'y'
+                && gridAsSingleString.toList()[index + 24] == 'y')
+                yellowWin = true
         }
-
+        for ((index, char) in gridAsSingleString.withIndex()) {
+            if (char != 'y' || index >= 21) continue
+            if (gridAsSingleString.toList()[index + 6] == 'y'
+                && gridAsSingleString.toList()[index + 12] == 'y'
+                && gridAsSingleString.toList()[index + 18] == 'y')
+                yellowWin = true
+        }
         return yellowWin
     }
 
