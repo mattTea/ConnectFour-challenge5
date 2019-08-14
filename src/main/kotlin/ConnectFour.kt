@@ -64,31 +64,36 @@ class ConnectFour {
         return transposedListOfStrings.toTypedArray()
     }
 
-    private fun checkForYellowDiagonalWin(grid: Array<String>): Boolean {
+    private fun checkForDiagonalWin(grid: Array<String>, player: Char): Boolean {
         var yellowWin = false
         val gridAsSingleString = grid.joinToString("").toLowerCase()
 
         for ((index, char) in gridAsSingleString.withIndex()) {
-            if (char != 'y' || index >= 18) continue
-            if (gridAsSingleString.toList()[index + 8] == 'y'
-                && gridAsSingleString.toList()[index + 16] == 'y'
-                && gridAsSingleString.toList()[index + 24] == 'y')
-                yellowWin = true
+            if (char == player && index < 18) {
+                if (gridAsSingleString.toList()[index + 8] == player
+                    && gridAsSingleString.toList()[index + 16] == player
+                    && gridAsSingleString.toList()[index + 24] == player) {
+                    yellowWin = true
+                }
+            }
         }
+
         for ((index, char) in gridAsSingleString.withIndex()) {
-            if (char != 'y' || index >= 21) continue
-            if (gridAsSingleString.toList()[index + 6] == 'y'
-                && gridAsSingleString.toList()[index + 12] == 'y'
-                && gridAsSingleString.toList()[index + 18] == 'y')
-                yellowWin = true
+            if (char == player && index < 21) {
+                if (gridAsSingleString.toList()[index + 6] == player
+                    && gridAsSingleString.toList()[index + 12] == player
+                    && gridAsSingleString.toList()[index + 18] == player) {
+                    yellowWin = true
+                }
+            }
         }
         return yellowWin
     }
 
     fun getGridStatus(grid: Array<String>): String {
         return when {
-            checkForRedWin(grid) || checkForRedColumnWin(grid) -> "Red wins"
-            checkForYellowWin(grid) || checkForYellowColumnWin(grid) || checkForYellowDiagonalWin(grid) -> "Yellow wins"
+            checkForRedWin(grid) || checkForRedColumnWin(grid) || checkForDiagonalWin(grid, 'r') -> "Red wins"
+            checkForYellowWin(grid) || checkForYellowColumnWin(grid) || checkForDiagonalWin(grid, 'y') -> "Yellow wins"
             checkForBlanks(grid) && checkForR(grid) -> "Yellow plays next"
             checkForBlanks(grid) && !checkForR(grid) -> "Red plays next"
             else -> "Draw"
